@@ -1,3 +1,3 @@
 # GESIS_Kurs
 
-Hey hier ist Anne
+Hey hier ist Anne.

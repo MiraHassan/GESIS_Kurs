@@ -14,6 +14,9 @@ header-includes:
   
   J
 # R Markdown
+```{r libraries, echo=FALSE}
+library(readr) #bitte Style beachten
+```
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
 For more details on using R Markdown see [bookdown.org/yihui/rmarkdown](https://bookdown.org/yihui/rmarkdown).
@@ -67,12 +70,11 @@ Hier ist ein bisschen Text, den ich mit einer Quelle belege [@berning_publicatio
 Nun kommt eine Grafik. 
 
 ```{r figure1, echo=FALSE, warning=FALSE, fig.cap = "Bildunterschrift \\label{fig:figuretest}"}
-library(readr)
 example_data <- read_csv("example_data.csv")
 papaja::apa_barplot(
   data = example_data ,
   id = "X1", 
-  dv = "Self",
+  dv = "Partner",
   factors = "Gender"
 )
 ```
