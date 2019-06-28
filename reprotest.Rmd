@@ -77,7 +77,7 @@ papaja::apa_barplot(
 )
 ```
 
-Hier sieht man nun \@ref(fig:figuretest).
+Hier sieht man nun \@ref(fig:figuretest). Das funktioniert leider nicht.
 
 \newpage
 
